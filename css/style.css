@@ -234,14 +234,21 @@ main {
 
 .alterar {
     margin: 2px;
-    width: 200px;
-    font-size: large;
-    background-color: black;
-    border-radius: 4px;
+    width: 150px;
+    background-color: var(--main-branco);
+    border: 3px solid var(--main-branco);
     padding: 0.5em;
-    color: white;
+    color: var(--main-preto);
     text-decoration: none;
-    margin-bottom: 4em; 
+    margin-bottom: -3em; 
+    clip-path: polygon(100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0 0);
+    cursor: pointer;
+    font-size: large;
+}
+
+.alterar:hover {
+    background: var(--main-preto);
+    color: var(--main-branco);
 }
 
 .botoes {
